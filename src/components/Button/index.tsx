@@ -15,7 +15,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <CustomButton disabled={isLoading} outlined={isOutlined} {...props}>
-      {isLoading ? 'Carregando...' : children}
+      {isLoading ? 'Loading...' : children}
     </CustomButton>
   )
 }

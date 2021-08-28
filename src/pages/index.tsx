@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 
 import {
@@ -18,6 +19,7 @@ import {
 import { HomeHeader } from '../components/HomeHeader'
 import { Button } from '../components/Button'
 import { MoviesSection } from '../components/MoviesSection'
+import { DevicesSection } from '../components/DevicesSection'
 import { Footer } from '../components/Footer'
 
 import logoImg from '../../public/images/logo.svg'
@@ -49,7 +51,9 @@ export default function Landing() {
             R$ 1,90 <span>for the first month</span>
           </Price>
 
-          <Button>Sign up now</Button>
+          <Link href="/register" passHref>
+            <Button>Sign up now</Button>
+          </Link>
 
           <Description>
             Promotional price of R$1,90 only for the first month, to new
@@ -82,10 +86,13 @@ export default function Landing() {
           title="Exclusive Disney+ Originals"
           text="Watch never-before-seen movies, series, shorts and more from the world’s greatest storytellers – only available on Disney+"
         />
+
         <MoviesSection
           title="Endless entertainment"
           text="Discover the best stories from Disney, Pixar, Marvel, Star Wars and National Geographic in one place. From hit movies to timeless classics and new originals – there's something for everyone."
         />
+
+        <DevicesSection title="Available on your favorite devices" />
       </Main>
 
       <Footer />

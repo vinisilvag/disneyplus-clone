@@ -46,3 +46,35 @@ export const Form = styled.form`
     margin-top: 0.6rem;
   }
 `
+export const SignUpText = styled.p`
+  font-size: 13px;
+  padding-top: 1rem !important;
+
+  a {
+    color: ${props => props.theme.colors.white};
+    text-decoration: none;
+    font-weight: 500;
+
+    :hover {
+      text-decoration: underline;
+    }
+  }
+`
+
+export const SignInButton = styled.span`
+  position: absolute;
+
+  top: 4rem;
+  right: 4rem;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: ${props => props.theme.colors.text};
+
+    :hover {
+      color: ${props => props.theme.colors.white};
+    }
+  }
+`

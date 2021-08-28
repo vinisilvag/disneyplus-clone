@@ -22,7 +22,7 @@ export const LeftContainer = styled.div`
   display: flex;
   gap: 1rem;
 
-  > a {
+  img {
     cursor: pointer;
   }
 `
